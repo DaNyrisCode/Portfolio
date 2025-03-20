@@ -1,0 +1,101 @@
+@use "../styles/variables.scss" as *;
+
+.projets {
+	position: relative;
+	padding: 120px 10%;
+	text-align: center;
+	background: $bg-light;
+	transition: background 0.2s ease;
+
+	.projet-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.projet-card {
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		padding: 20px;
+		border-radius: 15px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.2s ease-out;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h3 {
+			margin-top: 15px;
+			font-size: 1.5rem;
+			color: $secondary-dark-green-color;
+			font-family: $homemade-font;
+		}
+
+		p {
+			font-size: 1rem;
+			color: darken($secondary-dark-green-color, 10%);
+			margin-bottom: 15px;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			margin-top: 15px;
+
+			a {
+				text-decoration: none;
+				background: $primary-green-color;
+				color: white;
+				padding: 10px 15px;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				cursor: pointer;
+				transition: background 0.3s ease-in-out;
+
+				i {
+					font-size: 1.2rem;
+				}
+
+				&:hover {
+					background: lighten($primary-green-color, 10%);
+				}
+			}
+		}
+	}
+}
+
+// Mode Nuit
+.dark-mode .projets {
+	background: $bg-dark;
+
+	.projet-card {
+		background: rgba(255, 255, 255, 0.1);
+		box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+
+		h3 {
+			color: $secondary-lilas-color;
+		}
+
+		p {
+			color: lighten($secondary-lilas-color, 10%);
+		}
+
+		.buttons a {
+			background: $primary-purple-color;
+
+			&:hover {
+				background: lighten($primary-purple-color, 10%);
+			}
+		}
+	}
+}

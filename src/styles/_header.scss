@@ -1,0 +1,109 @@
+@use "../styles/_variables.scss" as *;
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 40px;
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	z-index: 100;
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		gap: 40px;
+
+		li {
+			a {
+				text-decoration: none;
+				color: $secondary-dark-green-color;
+				font-weight: bold;
+				font-size: 20px;
+				font-family: $dancing-font;
+				position: relative;
+				transition: color 0.3s ease-in-out;
+
+				@media screen and (max-width: 768px) {
+					font-size: 16px;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: -3px;
+					width: 100%;
+					height: 2px;
+					background: $secondary-dark-green-color;
+					transform: scaleX(0);
+					transition: transform 0.3s ease-in-out;
+				}
+
+				&:hover::after {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+
+	.theme-toggle {
+		background: none;
+		border: none;
+		font-size: 22px;
+		cursor: pointer;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	.theme-icon {
+		width: 30px;
+		height: 30px;
+		transition: transform 0.3s ease, color 0.3s ease;
+		color: $secondary-dark-green-color;
+
+		@media screen and (max-width: 768px) {
+			width: 20px;
+			height: 20px;
+		}
+
+		&:hover {
+			transform: rotate(130deg);
+		}
+	}
+}
+
+.sticky {
+	position: fixed;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+// Mode Nuit
+.dark-mode .header {
+	background: rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+	nav ul li a {
+		color: $secondary-lilas-color;
+
+		&::after {
+			background: $secondary-lilas-color;
+		}
+	}
+
+	.theme-icon {
+		color: $secondary-lilas-color;
+	}
+}

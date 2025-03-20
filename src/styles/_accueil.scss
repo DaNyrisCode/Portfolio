@@ -1,0 +1,87 @@
+@use "../styles/_variables.scss" as *;
+
+.hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 10px;
+	background: linear-gradient(
+		180deg,
+		$primary-green-color,
+		$tertiary-beige-color
+	);
+	color: $secondary-dark-green-color;
+	padding: 20px;
+	transition: background 0.2s ease;
+
+	@media screen and (max-width: 768px) {
+		height: 60vh;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		font-family: $dancing-font;
+		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+		@media screen and (max-width: 768px) {
+			font-size: 2rem;
+		}
+	}
+
+	p {
+		font-family: $kalam-font;
+		font-size: 1.2rem;
+		margin-top: 10px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 1rem;
+		}
+	}
+
+	.buttons-container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	button {
+		font-family: $dancing-font;
+		margin-top: 10px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.3);
+		backdrop-filter: blur(5px);
+		color: white;
+		font-size: 1.1rem;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		@media screen and (max-width: 768px) {
+			font-size: 1rem;
+		}
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.5);
+			transform: scale(1.05);
+		}
+	}
+}
+
+// Mode Nuit
+.dark-mode .hero {
+	background: linear-gradient(180deg, $bg-dark, $primary-purple-color);
+	color: $light-lilas;
+
+	button {
+		background: rgba(255, 255, 255, 0.2);
+		color: $light-lilas;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.4);
+		}
+	}
+}

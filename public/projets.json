@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Portfolio",
+      "description": "Mon portfolio développé avec React et Framer Motion.",
+      "github": "https://github.com/ton-profil/portfolio",
+      "live": "https://ton-profil.github.io/portfolio",
+      "image": "/assets/portfolio.png"
+    },
+    {
+      "id": 2,
+      "title": "Oh My Food",
+      "description": "Un projet de réservation de menus de restaurant en mobile-first.",
+      "github": "https://github.com/DaNyrisCode/OCRProject-OhMyFood",
+      "live": "https://ton-profil.github.io/ohmyfood",
+      "image": "/assets/ohmyfood.png"
+    },
+    {
+      "id": 3,
+      "title": "Kasa",
+      "description": "Une plateforme de location d’appartements développée avec React.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-Kasa",
+      "live": "",
+      "image": "/assets/kasa.png"
+    },
+    {
+      "id": 4,
+      "title": "Sophie Bluel",
+      "description": "Un portfolio pour une architecte avec connexion a une API.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-SophieBluel",
+      "live": "https://ton-profil.github.io/ohmygame",
+      "image": "/assets/ohmygame.png"
+    },
+    {
+      "id": 5,
+      "title": "724 Events",
+      "description": "Debugger le site d'une agence de voyages.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-724",
+      "live": "https://ton-profil.github.io/ohmygame",
+      "image": "/assets/ohmygame.png"
+    }
+  ]
+  

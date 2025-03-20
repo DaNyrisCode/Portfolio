@@ -1,0 +1,35 @@
+@use "./_variables.scss" as *;
+@use "./_header.scss";
+@use "./_accueil.scss";
+@use "./_presentation.scss";
+@use "./_projets.scss";
+
+// Reset CSS
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $kalam-font;
+}
+
+.section-title {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 5rem;
+	font-family: $dancing-font;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.1);
+	filter: blur(5px);
+	user-select: none;
+	z-index: 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 3rem;
+	}
+}
+
+.dark-mode .section-title {
+	color: rgba(255, 255, 255, 0.1);
+}

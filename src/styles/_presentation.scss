@@ -1,0 +1,77 @@
+@use "../styles/variables.scss" as *;
+
+.presentation {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	padding: 120px 10%;
+	gap: 100px;
+	background: $bg-light;
+	transition: background 0.2s ease;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+
+	.content {
+		flex: 1;
+		max-width: 600px;
+		position: relative;
+		z-index: 2;
+
+		h3 {
+			font-size: 2.5rem;
+			font-family: $dancing-font;
+			color: $secondary-dark-green-color;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: darken($primary-green-color, 10%);
+			line-height: 1.6;
+		}
+	}
+
+	.image-container {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		z-index: 2;
+		perspective: 1000px;
+
+		img {
+			width: 350px;
+			height: auto;
+			border-radius: 50%;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+			&:hover {
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+}
+
+// Mode Nuit
+.dark-mode .presentation {
+	background: $bg-dark;
+
+	.content {
+		h3 {
+			color: $secondary-lilas-color;
+		}
+
+		p {
+			color: lighten($secondary-lilas-color, 10%);
+		}
+	}
+
+	.image-container img {
+		box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+	}
+}
