@@ -31,7 +31,7 @@ function Header() {
 			<nav>
 				<ul>
 					<li>
-						<a href="#accueil">Accueil</a>
+						<a href="#home">Accueil</a>
 					</li>
 					<li>
 						<a href="#presentation">Présentation</a>

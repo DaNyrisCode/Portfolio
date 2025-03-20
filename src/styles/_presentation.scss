@@ -8,7 +8,7 @@
 	text-align: left;
 	padding: 120px 10%;
 	gap: 100px;
-	background: $bg-light;
+	background: linear-gradient(180deg, $tertiary-beige-color, $light-lilas);
 	transition: background 0.2s ease;
 
 	@media screen and (max-width: 768px) {
@@ -24,7 +24,6 @@
 
 		h3 {
 			font-size: 2.5rem;
-			font-family: $dancing-font;
 			color: $secondary-dark-green-color;
 			margin-bottom: 30px;
 		}
@@ -59,7 +58,7 @@
 
 // Mode Nuit
 .dark-mode .presentation {
-	background: $bg-dark;
+	background: linear-gradient(180deg, $primary-purple-color, $bg-dark);
 
 	.content {
 		h3 {

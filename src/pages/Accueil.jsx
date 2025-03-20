@@ -1,18 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
+import useSectionAnimation from "../hooks/useSectionAnimation";
 
 function Accueil() {
 	const { isDarkMode } = useTheme();
+	const { ref, isInView } = useSectionAnimation(0.6, false);
 
 	return (
 		<section
 			className="hero"
-			key={isDarkMode ? "dark" : "light"}
+			id="home"
+			ref={ref}
 		>
 			<motion.h1
 				initial={{ opacity: 0, y: -50 }}
-				animate={{ opacity: 1, y: 0 }}
+				animate={isInView ? { opacity: 1, y: 0 } : {}}
 				transition={{ duration: 1 }}
 			>
 				{!isDarkMode
@@ -22,8 +25,8 @@ function Accueil() {
 
 			<motion.p
 				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ delay: 0.5, duration: 1 }}
+				animate={isInView ? { opacity: 1 } : {}}
+				transition={{ delay: 0.3, duration: 1 }}
 			>
 				{!isDarkMode
 					? "Bienvenue sur mon portfolio ! Découvrez mes projets."
@@ -33,19 +36,19 @@ function Accueil() {
 			<div className="buttons-container">
 				<motion.button
 					initial={{ opacity: 0, scale: 0.8 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ delay: 1, duration: 0.5 }}
+					animate={isInView ? { opacity: 1, scale: 1 } : {}}
+					transition={{ delay: 0.6, duration: 0.5 }}
 				>
-					Voir mes Projets
+					<a href="#projets">Voir mes Projets</a>
 				</motion.button>
 
 				{isDarkMode && (
 					<motion.button
 						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 1.5, duration: 0.5 }}
+						animate={isInView ? { opacity: 1, scale: 1 } : {}}
+						transition={{ delay: 0.9, duration: 0.5 }}
 					>
-						Mes Passions
+						<a href="#passions">Mes Passions</a>
 					</motion.button>
 				)}
 			</div>

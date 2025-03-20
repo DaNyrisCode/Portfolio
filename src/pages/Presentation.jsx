@@ -1,20 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import useSectionAnimation from "../hooks/useSectionAnimation"; // ✅ Import du hook
 import img1 from "../assets/test.jpg";
 import img2 from "../assets/test2.png";
 import { useTheme } from "../context/ThemeContext";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 function Presentation() {
 	const { isDarkMode } = useTheme();
 	const [rotateX, setRotateX] = useState(0);
 	const [rotateY, setRotateY] = useState(0);
 
-	const contentRef = useRef(null);
-	const isContentInView = useInView(contentRef, {
-		triggerOnce: false,
-		threshold: 0.6,
-	});
+	const { ref, isInView } = useSectionAnimation(0.6, false);
 
 	const handleMouseMove = (e) => {
 		const { width, height, left, top } =
@@ -35,18 +32,16 @@ function Presentation() {
 		<section
 			className="presentation"
 			id="presentation"
+			ref={ref}
 		>
-			<div
-				className="section-title"
-				ref={contentRef}
-			>
+			<div className="section-title">
 				<h2>Présentation</h2>
 			</div>
 
 			<div className="content">
 				<motion.h3
 					initial={{ opacity: 0, x: -50 }}
-					animate={isContentInView ? { opacity: 1, x: 0 } : {}}
+					animate={isInView ? { opacity: 1, x: 0 } : {}}
 					transition={{ duration: 1 }}
 				>
 					Qui suis-je ?
@@ -54,7 +49,7 @@ function Presentation() {
 
 				<motion.p
 					initial={{ opacity: 0, x: 50 }}
-					animate={isContentInView ? { opacity: 1, x: 0 } : {}}
+					animate={isInView ? { opacity: 1, x: 0 } : {}}
 					transition={{ duration: 1, delay: 0.3 }}
 				>
 					{!isDarkMode
@@ -66,7 +61,7 @@ function Presentation() {
 			<motion.div
 				className="image-container"
 				initial={{ opacity: 0, scale: 0.8 }}
-				animate={isContentInView ? { opacity: 1, scale: 1.1 } : {}}
+				animate={isInView ? { opacity: 1, scale: 1.1 } : {}}
 				transition={{ duration: 0.8, delay: 0.3 }}
 			>
 				<motion.img

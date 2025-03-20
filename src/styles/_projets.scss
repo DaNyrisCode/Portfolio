@@ -4,7 +4,7 @@
 	position: relative;
 	padding: 120px 10%;
 	text-align: center;
-	background: $bg-light;
+	background: linear-gradient(180deg, $light-lilas, $wht-color);
 	transition: background 0.2s ease;
 
 	.projet-container {
@@ -17,16 +17,17 @@
 
 	.projet-card {
 		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(10px);
 		padding: 20px;
 		border-radius: 15px;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		transition: transform 0.2s ease-out;
+		cursor: pointer;
 
 		img {
 			width: 100%;
-			height: auto;
+			height: 250px;
+			object-fit: cover;
 			border-radius: 10px;
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 		}
@@ -35,7 +36,6 @@
 			margin-top: 15px;
 			font-size: 1.5rem;
 			color: $secondary-dark-green-color;
-			font-family: $homemade-font;
 		}
 
 		p {
@@ -76,7 +76,7 @@
 
 // Mode Nuit
 .dark-mode .projets {
-	background: $bg-dark;
+	background: linear-gradient(180deg, $bg-dark, $blck-color);
 
 	.projet-card {
 		background: rgba(255, 255, 255, 0.1);

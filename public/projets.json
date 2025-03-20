@@ -3,17 +3,17 @@
       "id": 1,
       "title": "Portfolio",
       "description": "Mon portfolio développé avec React et Framer Motion.",
-      "github": "https://github.com/ton-profil/portfolio",
-      "live": "https://ton-profil.github.io/portfolio",
-      "image": "/assets/portfolio.png"
+      "github": "https://github.com/DaNyrisCode/Portfolio",
+      "live": "",
+      "image": "./src/assets/OMF.avif"
     },
     {
       "id": 2,
       "title": "Oh My Food",
       "description": "Un projet de réservation de menus de restaurant en mobile-first.",
       "github": "https://github.com/DaNyrisCode/OCRProject-OhMyFood",
-      "live": "https://ton-profil.github.io/ohmyfood",
-      "image": "/assets/ohmyfood.png"
+      "live": "https://danyriscode.github.io/OCRProject-OhMyFood/",
+      "image": "./src/assets/OMF.avif"
     },
     {
       "id": 3,
@@ -21,23 +21,47 @@
       "description": "Une plateforme de location d’appartements développée avec React.",
       "github": "https://github.com/DaNyrisCode/OCR-Project-Kasa",
       "live": "",
-      "image": "/assets/kasa.png"
+      "image": "./src/assets/Kasa.avif"
     },
     {
       "id": 4,
       "title": "Sophie Bluel",
       "description": "Un portfolio pour une architecte avec connexion a une API.",
       "github": "https://github.com/DaNyrisCode/OCR-Project-SophieBluel",
-      "live": "https://ton-profil.github.io/ohmygame",
-      "image": "/assets/ohmygame.png"
+      "live": "",
+      "image": "./src/assets/Sophie.avif"
     },
     {
       "id": 5,
       "title": "724 Events",
       "description": "Debugger le site d'une agence de voyages.",
       "github": "https://github.com/DaNyrisCode/OCR-Project-724",
-      "live": "https://ton-profil.github.io/ohmygame",
-      "image": "/assets/ohmygame.png"
+      "live": "",
+      "image": "./src/assets/724.avif"
+    },
+    {
+      "id": 6,
+      "title": "Nina Carducci",
+      "description": "Optimiser le référencement d'un site de photographe.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-NinaCarducci-SEO",
+      "live": "https://danyriscode.github.io/OCR-Project-NinaCarducci-SEO/",
+      "image": "./src/assets/Nina.avif"
+    },
+    {
+      "id": 7,
+      "title": "Argent Bank",
+      "description": "Intégrer le front-end avec le back-end via des appels API pour une application bancaire.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-ArgentBank",
+      "live": "",
+      "image": "./src/assets/ArgentBank.avif"
+    },
+    {
+      "id": 8,
+      "title": "Print It",
+      "description": "Dynamiser le site Internet statique d’une petite imprimerie familiale.",
+      "github": "https://github.com/DaNyrisCode/OCR-Project-Print-It",
+      "live": "https://danyriscode.github.io/OCR-Project-Print-It/",
+      "image": "./src/assets/PrintIt.avif"
     }
   ]
   

@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTheme } from "../context/ThemeContext";
+import useSectionAnimation from "../hooks/useSectionAnimation";
 
 function Projets() {
-	const { isDarkMode } = useTheme();
 	const [projects, setProjects] = useState([]);
 
-	// Charger les projets depuis le JSON
 	useEffect(() => {
-		fetch("/public/projets.json")
+		fetch("/projets.json")
 			.then((response) => response.json())
 			.then((data) => setProjects(data))
 			.catch((error) => console.error("Erreur de chargement :", error));
 	}, []);
 
+	const { ref, isInView } = useSectionAnimation(0.6, false);
+
 	return (
 		<section
 			className="projets"
 			id="projets"
-			key={isDarkMode ? "dark" : "light"}
+			ref={ref}
 		>
 			<div className="section-title">
 				<h2>Mes Projets</h2>
@@ -29,11 +29,11 @@ function Projets() {
 					<motion.div
 						key={projet.id}
 						className="projet-card"
-						whileHover={{ scale: 1.05 }}
+						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.95 }}
 						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5, delay: projet.id * 0.2 }}
+						animate={isInView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 0.5, delay: projet.id * 0.1 }}
 					>
 						<img
 							src={projet.image}

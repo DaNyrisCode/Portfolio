@@ -1,7 +1,7 @@
 @use "../styles/_variables.scss" as *;
 
 .hero {
-	height: 100vh;
+	height: 101vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -55,10 +55,13 @@
 		border-radius: 20px;
 		background: rgba(255, 255, 255, 0.3);
 		backdrop-filter: blur(5px);
-		color: white;
 		font-size: 1.1rem;
 		cursor: pointer;
 		transition: all 0.3s ease-in-out;
+
+		& a {
+			color: $tertiary-beige-color;
+		}
 
 		@media screen and (max-width: 768px) {
 			font-size: 1rem;
