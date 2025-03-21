@@ -1,11 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
+import img1 from "../assets/feuilles-1400.avif";
+import img2 from "../assets/violet-1400.avif";
 import useSectionAnimation from "../hooks/useSectionAnimation";
 
 function Accueil() {
 	const { isDarkMode } = useTheme();
-	const { ref, isInView } = useSectionAnimation(0.6, false);
+	const { ref, isInView } = useSectionAnimation(0.7, false);
 
 	return (
 		<section
@@ -13,19 +15,12 @@ function Accueil() {
 			id="home"
 			ref={ref}
 		>
-			{!isDarkMode ? (
-				<img
-					className="hero-img"
-					src="./src/assets/feuilles-1400.avif"
-					alt=""
-				/>
-			) : (
-				<img
-					className="hero-img"
-					src="./src/assets/violet-1400.avif"
-					alt=""
-				/>
-			)}
+			<img
+				src={!isDarkMode ? img1 : img2}
+				alt="Fond d'cran"
+				className="hero-img"
+			/>
+
 			<div className="hero-content">
 				<motion.h1
 					initial={{ opacity: 0, y: -50 }}

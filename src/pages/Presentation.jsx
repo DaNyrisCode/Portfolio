@@ -11,7 +11,7 @@ function Presentation() {
 	const [rotateX, setRotateX] = useState(0);
 	const [rotateY, setRotateY] = useState(0);
 
-	const { ref, isInView } = useSectionAnimation(0.6, false);
+	const { ref, isInView } = useSectionAnimation(0.7, false);
 
 	const handleMouseMove = (e) => {
 		const { width, height, left, top } =

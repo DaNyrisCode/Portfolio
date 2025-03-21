@@ -7,7 +7,7 @@ import * as SiIcons from "react-icons/si";
 import * as MdIcons from "react-icons/md";
 
 function Competences() {
-	const { ref, isInView } = useSectionAnimation(0.6, false);
+	const { ref, isInView } = useSectionAnimation(0.7, false);
 	const [skills, setSkills] = useState({ hardSkills: [], softSkills: [] });
 
 	useEffect(() => {

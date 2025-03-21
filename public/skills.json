@@ -8,9 +8,10 @@
       { "name": "Redux", "icon": "SiRedux", "color": "#764abc" },
       { "name": "Git", "icon": "FaGitAlt", "color": "#f14e32" },
       { "name": "GitHub", "icon": "FaGithub", "color": "#ffffff" },
-      { "name": "Node.js", "icon": "FaNodeJs", "color": "#83cd29" },
       { "name": "MongoDB", "icon": "SiMongodb", "color": "#4db33d" },
-      { "name": "Figma", "icon": "SiFigma", "color": "#f24e1e" }
+      { "name": "Figma", "icon": "SiFigma", "color": "#f24e1e" },
+      { "name": "Visual Studio Code", "icon": "FaCode", "color": "#007ACC" },
+      { "name": "Swagger", "icon": "SiSwagger", "color": "#85ea2d" }
     ],
     "softSkills": [
       {
@@ -32,6 +33,16 @@
         "name": "Empathie",
         "icon": "FaHandHoldingHeart",
         "description": "Je porte une attention particulière aux besoins des autres."
+      },
+      {
+        "name": "Communication",
+        "icon": "MdOutlineChat",
+        "description": "Je suis capable de communiquer clairement et efficacement."
+      },
+      {
+        "name": "Rigueur",
+        "icon": "MdOutlineTimer",
+        "description": "Je suis rigoureux et minutieux dans mes travaux."
       }
     ]
   }

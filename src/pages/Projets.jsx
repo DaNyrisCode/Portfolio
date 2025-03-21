@@ -13,7 +13,7 @@ function Projets() {
 			.catch((error) => console.error("Erreur de chargement :", error));
 	}, []);
 
-	const { ref, isInView } = useSectionAnimation(0.6, false);
+	const { ref, isInView } = useSectionAnimation(0.2, false);
 
 	return (
 		<section
