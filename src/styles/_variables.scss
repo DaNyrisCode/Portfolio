@@ -21,3 +21,22 @@ $blck-color: #000;
 $kalam-font: "Kalam", sans-serif;
 $dancing-font: "Dancing Script", cursive;
 $homemade-font: "Homemade Apple", cursive;
+
+// Animation
+@keyframes shake {
+	0% {
+		transform: translateX(0) rotate(0);
+	}
+	25% {
+		transform: translateX(-2px) rotate(-2deg);
+	}
+	50% {
+		transform: translateX(2px) rotate(2deg);
+	}
+	75% {
+		transform: translateX(-2px) rotate(-2deg);
+	}
+	100% {
+		transform: translateX(0) rotate(0);
+	}
+}

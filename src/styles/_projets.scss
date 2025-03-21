@@ -7,6 +7,10 @@
 	background: linear-gradient(180deg, $light-lilas, $wht-color);
 	transition: background 0.2s ease;
 
+	@media screen and (max-width: 768px) {
+		padding: 0px;
+	}
+
 	.projet-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

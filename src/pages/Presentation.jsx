@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import useSectionAnimation from "../hooks/useSectionAnimation"; // ✅ Import du hook
-import img1 from "../assets/test.jpg";
-import img2 from "../assets/test2.png";
+import img1 from "../assets/daymode-500.avif";
+import img2 from "../assets/darkmode-500.avif";
 import { useTheme } from "../context/ThemeContext";
 import { useState } from "react";
 
@@ -16,8 +16,8 @@ function Presentation() {
 	const handleMouseMove = (e) => {
 		const { width, height, left, top } =
 			e.currentTarget.getBoundingClientRect();
-		const x = (e.clientX - left - width / 2) / 6;
-		const y = (e.clientY - top - height / 2) / 6;
+		const x = (e.clientX - left - width / 2) / 10;
+		const y = (e.clientY - top - height / 2) / 10;
 
 		setRotateX(-y);
 		setRotateY(x);
@@ -61,7 +61,7 @@ function Presentation() {
 			<motion.div
 				className="image-container"
 				initial={{ opacity: 0, scale: 0.8 }}
-				animate={isInView ? { opacity: 1, scale: 1.1 } : {}}
+				animate={isInView ? { opacity: 1, scale: 1 } : {}}
 				transition={{ duration: 0.8, delay: 0.3 }}
 			>
 				<motion.img
@@ -70,7 +70,7 @@ function Presentation() {
 					onMouseMove={handleMouseMove}
 					onMouseLeave={handleMouseLeave}
 					animate={{ rotateX, rotateY }}
-					transition={{ type: "spring", stiffness: 300, damping: 30 }}
+					transition={{ type: "spring", stiffness: 900, damping: 90 }}
 				/>
 			</motion.div>
 		</section>

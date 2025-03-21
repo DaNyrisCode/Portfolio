@@ -22,7 +22,7 @@ function Projets() {
 			ref={ref}
 		>
 			<div className="section-title">
-				<h2>Mes Projets</h2>
+				<h2>Projets</h2>
 			</div>
 			<div className="projet-container">
 				{projects.map((projet) => (

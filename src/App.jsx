@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Accueil from "./pages/Accueil";
 import Presentation from "./pages/Presentation";
 import Projets from "./pages/Projets";
+import Competences from "./pages/Competences";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Accueil />
 			<Presentation />
 			<Projets />
+			<Competences />
 		</>
 	);
 }

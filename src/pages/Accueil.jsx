@@ -13,25 +13,40 @@ function Accueil() {
 			id="home"
 			ref={ref}
 		>
-			<motion.h1
-				initial={{ opacity: 0, y: -50 }}
-				animate={isInView ? { opacity: 1, y: 0 } : {}}
-				transition={{ duration: 1 }}
-			>
-				{!isDarkMode
-					? "Marina, Développeuse Web qui allie sa passion pour le Dessin au Code."
-					: "Bienvenue dans mon univers, où chaque ligne de code raconte une histoire."}
-			</motion.h1>
+			{!isDarkMode ? (
+				<img
+					className="hero-img"
+					src="./src/assets/feuilles-1400.avif"
+					alt=""
+				/>
+			) : (
+				<img
+					className="hero-img"
+					src="./src/assets/violet-1400.avif"
+					alt=""
+				/>
+			)}
+			<div className="hero-content">
+				<motion.h1
+					initial={{ opacity: 0, y: -50 }}
+					animate={isInView ? { opacity: 1, y: 0 } : {}}
+					transition={{ duration: 1 }}
+				>
+					{!isDarkMode
+						? "Marina, Développeuse Web qui allie sa passion pour le Dessin au Code."
+						: "Bienvenue dans mon univers, où chaque ligne de code raconte une histoire."}
+				</motion.h1>
 
-			<motion.p
-				initial={{ opacity: 0 }}
-				animate={isInView ? { opacity: 1 } : {}}
-				transition={{ delay: 0.3, duration: 1 }}
-			>
-				{!isDarkMode
-					? "Bienvenue sur mon portfolio ! Découvrez mes projets."
-					: "N'hésitez pas à consulter mes projets et mes passions."}
-			</motion.p>
+				<motion.p
+					initial={{ opacity: 0 }}
+					animate={isInView ? { opacity: 1 } : {}}
+					transition={{ delay: 0.3, duration: 1 }}
+				>
+					{!isDarkMode
+						? "Bienvenue sur mon portfolio ! Découvrez mes projets."
+						: "N'hésitez pas à consulter mes projets et mes passions."}
+				</motion.p>
+			</div>
 
 			<div className="buttons-container">
 				<motion.button
