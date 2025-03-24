@@ -1,0 +1,114 @@
+@use "../styles/variables.scss" as *;
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	position: relative;
+	background: #05464c99;
+	backdrop-filter: blur(12px);
+	border-radius: 20px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	max-width: 600px;
+	width: 90%;
+	padding: 2rem;
+	text-align: center;
+	color: $tertiary-beige-color;
+
+	img {
+		width: 100%;
+		max-height: 300px;
+		object-fit: cover;
+		border-radius: 10px;
+		padding: 5px;
+	}
+
+	h3 {
+		margin-top: 1rem;
+		font-size: 1.8rem;
+		color: $tertiary-beige-color;
+	}
+
+	.modal-description {
+		margin: 1rem 0;
+		font-size: 1rem;
+	}
+
+	.technos {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 15px;
+		margin-bottom: 1rem;
+
+		.tech-icon {
+			width: 30px;
+			height: 30px;
+			filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+		}
+	}
+
+	.modal-links {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+
+		a {
+			background: $primary-green-color;
+			color: $wht-color;
+			padding: 10px 15px;
+			border-radius: 8px;
+			text-decoration: none;
+			align-items: center;
+			gap: 0.5rem;
+
+			&:hover {
+				background: lighten($primary-green-color, 10%);
+			}
+		}
+	}
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: $tertiary-beige-color;
+
+	svg {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+// Mode nuit
+.dark-mode .modal-content {
+	background: rgba(0, 0, 0, 0.6);
+	color: $secondary-lilas-color;
+
+	h3 {
+		color: $light-lilas;
+	}
+
+	.modal-links a {
+		background: $primary-purple-color;
+
+		&:hover {
+			background: lighten($primary-purple-color, 10%);
+		}
+	}
+}

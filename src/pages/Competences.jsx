@@ -74,11 +74,9 @@ function Competences() {
 					{skills.softSkills.map((skill, index) => {
 						const IconComponent = getIcon(skill.icon);
 						return (
-							<motion.div
+							<div
 								key={index}
 								className="soft-skill-card"
-								whileHover={{ scale: 1.05 }}
-								whileTap={{ scale: 0.95 }}
 							>
 								<div className="icon-wrapper">
 									{IconComponent && (
@@ -87,7 +85,7 @@ function Competences() {
 								</div>
 								<h4>{skill.name}</h4>
 								<p>{skill.description}</p>
-							</motion.div>
+							</div>
 						);
 					})}
 				</motion.div>

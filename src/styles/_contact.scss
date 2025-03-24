@@ -1,13 +1,17 @@
 @use "../styles/_variables.scss" as *;
 
 .contact {
-	position: relative;
-	padding: 100px 10%;
 	text-align: center;
 	background: $secondary-dark-green-color;
+	@include section-position;
+	@include section-padding;
 
 	@media screen and (max-width: 768px) {
 		padding: 20px;
+	}
+
+	.section-title {
+		color: rgba(255, 255, 255, 0.1);
 	}
 
 	.confirmation-message {

@@ -1,0 +1,48 @@
+@use "../styles/_variables.scss" as *;
+
+.passions {
+	background: linear-gradient(180deg, $primary-purple-color, $bg-dark);
+	color: $light-lilas;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	@include section-position;
+	@include section-padding;
+
+	.passion-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&.reverse {
+			flex-direction: row-reverse;
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+
+		.text {
+			flex: 1;
+			min-width: 250px;
+
+			h3 {
+				font-size: 2rem;
+				margin-bottom: 10px;
+				color: $light-lilas;
+			}
+
+			p {
+				line-height: 1.6;
+			}
+		}
+	}
+}

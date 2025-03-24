@@ -2,9 +2,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import useSectionAnimation from "../hooks/useSectionAnimation";
+import ModalProjet from "../components/ModalProjet";
 
 function Projets() {
 	const [projects, setProjects] = useState([]);
+	const [selectedProject, setSelectedProject] = useState(null);
 
 	useEffect(() => {
 		fetch("/projets.json")
@@ -34,6 +36,7 @@ function Projets() {
 						initial={{ opacity: 0, y: 50 }}
 						animate={isInView ? { opacity: 1, y: 0 } : {}}
 						transition={{ duration: 0.5, delay: projet.id * 0.1 }}
+						onClick={() => setSelectedProject(projet)}
 					>
 						<img
 							src={projet.image}
@@ -41,27 +44,13 @@ function Projets() {
 						/>
 						<h3>{projet.title}</h3>
 						<p>{projet.description}</p>
-						<div className="buttons">
-							<a
-								href={projet.github}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<i className="fa-brands fa-github"></i> GitHub
-							</a>
-							{projet.live && (
-								<a
-									href={projet.live}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i className="fa-solid fa-globe"></i> Live
-								</a>
-							)}
-						</div>
 					</motion.div>
 				))}
 			</div>
+			<ModalProjet
+				projet={selectedProject}
+				onClose={() => setSelectedProject(null)}
+			/>
 		</section>
 	);
 }

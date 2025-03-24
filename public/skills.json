@@ -14,31 +14,32 @@
       { "name": "Swagger", "icon": "SiSwagger", "color": "#85ea2d" }
     ],
     "softSkills": [
-      {
-        "name": "Travail d'équipe",
-        "icon": "MdGroupWork",
-        "description": "Je sais collaborer efficacement en équipe."
-      },
-      {
-        "name": "Adaptabilité",
-        "icon": "MdOutlineTipsAndUpdates",
-        "description": "Je m’adapte facilement aux nouvelles technologies."
-      },
-      {
-        "name": "Créativité",
-        "icon": "MdPsychology",
-        "description": "J'aime innover et améliorer l'expérience utilisateur."
-      },
-      {
-        "name": "Empathie",
-        "icon": "FaHandHoldingHeart",
-        "description": "Je porte une attention particulière aux besoins des autres."
-      },
-      {
-        "name": "Communication",
-        "icon": "MdOutlineChat",
-        "description": "Je suis capable de communiquer clairement et efficacement."
-      }
-    ]
-  }
+  {
+    "name": "Travail d'équipe",
+    "icon": "MdGroupWork",
+    "description": "J'apprécie collaborer sur des projets communs, partager les idées et avancer ensemble vers un objectif commun."
+  },
+  {
+    "name": "Résilience",
+    "icon": "MdAutorenew",
+    "description": "Face aux imprévus ou aux erreurs, je garde mon calme, apprends et rebondis avec efficacité."
+  },
+  {
+    "name": "Sens de l'organisation",
+    "icon": "MdOutlineChecklistRtl",
+    "description": "Je sais hiérarchiser les priorités, structurer mes tâches et respecter les délais dans un cadre autonome."
+  },
+  {
+    "name": "Créativité",
+    "icon": "MdPsychology",
+    "description": "J’aime concevoir des interfaces harmonieuses et trouver des solutions originales pour améliorer l’UI/UX."
+  },
+  {
+    "name": "Esprit logique",
+    "icon": "MdFunctions",
+    "description": "J'aborde les problèmes avec méthode et logique pour trouver des solutions efficaces."
+  }  
+]
+}
+  
   

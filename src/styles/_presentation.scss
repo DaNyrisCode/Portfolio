@@ -1,15 +1,15 @@
 @use "../styles/variables.scss" as *;
 
 .presentation {
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: left;
-	padding: 120px 10%;
-	gap: 100px;
+	gap: 20px;
 	background: linear-gradient(180deg, $tertiary-beige-color, $light-lilas);
 	transition: background 0.2s ease;
+	@include section-position;
+	@include section-padding;
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
@@ -43,7 +43,7 @@
 	.image-container {
 		flex: 1;
 		display: flex;
-		justify-content: center;
+		justify-content: end;
 		z-index: 2;
 		perspective: 1000px;
 

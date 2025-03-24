@@ -1,7 +1,6 @@
 @use "../styles/_variables.scss" as *;
 
 .hero {
-	position: relative;
 	height: 101vh;
 	display: flex;
 	flex-direction: column;
@@ -17,9 +16,10 @@
 	color: $secondary-dark-green-color;
 	padding: 20px;
 	transition: background 0.2s ease;
+	@include section-position;
 
 	@media screen and (max-width: 768px) {
-		height: 60vh;
+		height: 80vh;
 	}
 
 	.hero-img {

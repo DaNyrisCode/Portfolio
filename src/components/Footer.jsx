@@ -7,12 +7,12 @@ function Footer() {
 
 	return (
 		<footer className="footer">
-			Designed by Marina
+			Designed by {!isDarkMode ? "Marina" : "Nyris"}
 			<button
 				className="theme-toggle"
 				onClick={toggleTheme}
 			>
-				{isDarkMode ? (
+				{!isDarkMode ? (
 					<IconMoon className="theme-icon" />
 				) : (
 					<IconSun className="theme-icon" />

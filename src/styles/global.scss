@@ -1,11 +1,14 @@
 @use "./_variables.scss" as *;
 @use "./_header.scss";
 @use "./_accueil.scss";
+@use "./_passions.scss";
 @use "./_presentation.scss";
 @use "./_projets.scss";
+@use "./_modal.scss";
 @use "./_competences.scss";
 @use "./_footer.scss";
 @use "./_contact.scss";
+@use "./_carousel.scss";
 
 // Reset CSS
 * {
@@ -24,7 +27,7 @@ a {
 	top: 20px;
 	left: 50%;
 	transform: translateX(-50%);
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: $dancing-font;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.1);

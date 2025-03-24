@@ -1,9 +1,19 @@
 /* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { useTheme } from "../context/ThemeContext";
+import { motion } from "framer-motion";
+import Carousel from "../components/Carousel";
 
 function Passions() {
 	const { isDarkMode } = useTheme();
+	const [slides, setSlides] = useState({ dessin: [], jeux: [] });
+
+	useEffect(() => {
+		fetch("/passions.json")
+			.then((res) => res.json())
+			.then((data) => setSlides(data))
+			.catch((err) => console.error("Erreur chargement passions :", err));
+	}, []);
 
 	if (!isDarkMode) return null;
 
@@ -13,44 +23,31 @@ function Passions() {
 			id="passions"
 		>
 			<div className="section-title">
-				<h2>Mes Passions</h2>
-				<p>Bienvenue dans mon univers créatif et ludique 💫</p>
+				<h2>Passions</h2>
 			</div>
 
-			<div className="passion-content">
-				<motion.div
-					className="passion-block"
-					initial={{ opacity: 0, y: 30 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8 }}
-				>
-					<h3>🎨 Le Dessin</h3>
+			<div className="passion-block">
+				<div className="text">
+					<h3>Dessin</h3>
 					<p>
-						Depuis toujours, le dessin est mon échappatoire. Crayon,
-						aquarelle, encre... chaque trait raconte une histoire.
-						Cette sensibilité visuelle me pousse à créer des
-						interfaces harmonieuses et sensibles.
+						Depuis toujours, j’aime m’exprimer à travers le dessin.
+						C’est un moyen d’explorer des univers, raconter des
+						émotions, et libérer ma créativité.
 					</p>
-					{/* Tu peux mettre une galerie ou une image ici plus tard */}
-				</motion.div>
+				</div>
+				<Carousel images={slides.dessin} />
+			</div>
 
-				<motion.div
-					className="passion-block"
-					initial={{ opacity: 0, y: 30 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.3 }}
-				>
-					<h3>🎮 Satisfactory</h3>
+			<div className="passion-block reverse">
+				<div className="text">
+					<h3>Jeux Vidéo</h3>
 					<p>
-						J'adore les jeux de construction, de logique et
-						d’optimisation. Satisfactory est un parfait mélange
-						entre créativité, rigueur et organisation. Il stimule la
-						réflexion, l'efficacité et la gestion de systèmes
-						complexes — un vrai terrain d'entraînement pour l'esprit
-						d’un développeur !
+						Les jeux m’accompagnent depuis toujours. Satisfactory,
+						notamment, est un jeu de logique et de gestion qui
+						stimule l’analyse, l’optimisation, et la créativité.
 					</p>
-					{/* Optionnel : capture d’écran ou lien vers le jeu */}
-				</motion.div>
+				</div>
+				<Carousel images={slides.jeux} />
 			</div>
 		</section>
 	);

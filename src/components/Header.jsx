@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 function Header() {
 	const [isSticky, setIsSticky] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
+	const { isDarkMode } = useTheme();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -64,6 +66,16 @@ function Header() {
 								Compétences
 							</a>
 						</li>
+						{isDarkMode && (
+							<li>
+								<a
+									href="#passions"
+									onClick={handleLinkClick}
+								>
+									Passions
+								</a>
+							</li>
+						)}
 						<li>
 							<a
 								href="#contact"

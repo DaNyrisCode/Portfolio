@@ -1,15 +1,15 @@
 @use "../styles/_variables.scss" as *;
 
 .competences {
-	position: relative;
 	text-align: center;
-	padding: 120px 10%;
 	background: linear-gradient(
 		180deg,
 		$wht-color,
 		$secondary-dark-green-color
 	);
 	transition: background 0.2s ease;
+	@include section-position;
+	@include section-padding;
 
 	@media screen and (max-width: 768px) {
 		padding: 0px;
@@ -24,6 +24,11 @@
 		display: inline-block;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		margin-bottom: 50px;
+
+		@media screen and (max-width: 768px) {
+			background: none;
+			box-shadow: none;
+		}
 
 		h3 {
 			color: $primary-green-color;
@@ -69,73 +74,73 @@
 			}
 		}
 	}
-}
 
-// Soft Skills
-.soft-skills-container {
-	text-align: center;
-	margin-top: 2rem;
-
-	h3 {
-		color: $primary-green-color;
-		margin-bottom: 1rem;
-	}
-
-	.soft-skills-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 20px;
-		padding: 1rem;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.soft-skill-card {
-		background: rgba(255, 255, 255, 0.15);
-		backdrop-filter: blur(10px);
-		border-radius: 15px;
-		padding: 1.5rem;
+	// Soft Skills
+	.soft-skills-container {
 		text-align: center;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		margin-top: 2rem;
 
-		h4 {
-			margin-top: 1rem;
-			color: $secondary-dark-green-color;
-			font-size: 1.2rem;
+		h3 {
+			color: $primary-green-color;
+			margin-bottom: 1rem;
 		}
 
-		p {
-			font-size: 0.9rem;
-			color: $tertiary-beige-color;
-			margin-top: 0.5rem;
+		.soft-skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			padding: 1rem;
+			justify-content: center;
+			align-items: center;
 		}
 
-		&:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+		.soft-skill-card {
+			min-height: 250px;
+			background: rgba(255, 255, 255, 0.15);
+			backdrop-filter: blur(10px);
+			border-radius: 15px;
+			padding: 1.5rem;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-			.soft-skill-icon {
-				transform: rotate(20deg);
+			h4 {
+				margin-top: 1rem;
+				color: $secondary-dark-green-color;
+				font-size: 1.2rem;
+			}
+
+			p {
+				font-size: 0.9rem;
+				color: $tertiary-beige-color;
+				margin-top: 0.5rem;
+			}
+
+			&:hover {
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+				.soft-skill-icon {
+					transform: rotate(20deg);
+				}
 			}
 		}
-	}
 
-	.icon-wrapper {
-		background: $tertiary-beige-color;
-		border-radius: 50%;
-		width: 60px;
-		height: 60px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto;
-		transition: transform 0.3s ease-in-out;
-
-		.soft-skill-icon {
-			font-size: 2rem;
-			color: $primary-green-color;
+		.icon-wrapper {
+			background: $tertiary-beige-color;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
 			transition: transform 0.3s ease-in-out;
+
+			.soft-skill-icon {
+				font-size: 2rem;
+				color: $primary-green-color;
+				transition: transform 0.3s ease-in-out;
+			}
 		}
 	}
 }
@@ -143,13 +148,19 @@
 // Mode sombre
 .dark-mode {
 	.competences {
-		background: linear-gradient(180deg, $blck-color, $bg-dark);
+		background: linear-gradient(180deg, $blck-color, $primary-purple-color);
 
 		h3 {
 			color: $light-lilas;
 		}
 
 		.hard-skills-container,
+		.hard-skills-container {
+			@media screen and (max-width: 768px) {
+				background: none;
+				box-shadow: none;
+			}
+		}
 		.soft-skill-card {
 			background: rgba(255, 255, 255, 0.05);
 			border: 1px solid rgba(255, 255, 255, 0.2);

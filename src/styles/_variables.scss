@@ -22,6 +22,15 @@ $kalam-font: "Kalam", sans-serif;
 $dancing-font: "Dancing Script", cursive;
 $homemade-font: "Homemade Apple", cursive;
 
+// Mixins
+@mixin section-position {
+	position: relative;
+}
+
+@mixin section-padding {
+	padding: 150px 5% 30px;
+}
+
 // Animation
 @keyframes shake {
 	0% {
