@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import useSectionAnimation from "../hooks/useSectionAnimation"; // ✅ Import du hook
+import useSectionAnimation from "../hooks/useSectionAnimation";
 import img1 from "../assets/daymode-500.avif";
 import img2 from "../assets/darkmode-500.avif";
 import { useTheme } from "../context/ThemeContext";

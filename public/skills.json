@@ -38,11 +38,6 @@
         "name": "Communication",
         "icon": "MdOutlineChat",
         "description": "Je suis capable de communiquer clairement et efficacement."
-      },
-      {
-        "name": "Rigueur",
-        "icon": "MdOutlineTimer",
-        "description": "Je suis rigoureux et minutieux dans mes travaux."
       }
     ]
   }

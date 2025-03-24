@@ -35,7 +35,7 @@ function Competences() {
 
 			{/* Hard Skills */}
 			<div className="hard-skills-container">
-				<h3>Hard Skills</h3>
+				<h3>J'ai travailler avec</h3>
 				<motion.div
 					className="tech-skills"
 					initial={{ opacity: 0 }}

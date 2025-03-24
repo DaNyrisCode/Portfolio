@@ -1,0 +1,42 @@
+@use "../styles/_variables.scss" as *;
+
+.footer {
+	background-color: $secondary-dark-green-color;
+	color: $tertiary-beige-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	border: none;
+
+	.theme-icon {
+		width: 25px;
+		height: 25px;
+		transition: transform 0.3s ease, color 0.3s ease;
+		color: $tertiary-beige-color;
+
+		&:hover {
+			transform: rotate(130deg);
+		}
+	}
+}
+
+.theme-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.2s;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.dark-mode .footer {
+	background-color: $bg-dark;
+
+	.theme-icon {
+		color: $secondary-lilas-color;
+	}
+}
