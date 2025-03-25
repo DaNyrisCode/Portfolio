@@ -7,7 +7,7 @@
     "technos": ["React", "Sass", "Framer Motion"],
     "github": "https://github.com/DaNyrisCode/Portfolio",
     "live": "",
-    "image": "./src/assets/projets/Portfolio.avif"
+    "image": "/images/projets/PortFolio.avif"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "technos": ["HTML", "Sass"],
     "github": "https://github.com/DaNyrisCode/OCRProject-OhMyFood",
     "live": "https://danyriscode.github.io/OCRProject-OhMyFood/",
-    "image": "./src/assets/projets/OMF.avif"
+    "image": "/images/projets/OMF.avif"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "technos": ["React", "Sass"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-Kasa",
     "live": "",
-    "image": "./src/assets/projets/Kasa.avif"
+    "image": "/images/projets/Kasa.avif"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "technos": ["HTML", "Sass", "JavaScript", "API"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-SophieBluel",
     "live": "",
-    "image": "./src/assets/projets/Sophie.avif"
+    "image": "/images/projets/Sophie.avif"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "technos": ["JavaScript"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-724",
     "live": "",
-    "image": "./src/assets/projets/724.avif"
+    "image": "/images/projets/724.avif"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "technos": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-NinaCarducci-SEO",
     "live": "https://danyriscode.github.io/OCR-Project-NinaCarducci-SEO/",
-    "image": "./src/assets/projets/Nina.avif"
+    "image": "/images/projets/Nina.avif"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "technos": ["React", "Redux", "API"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-ArgentBank",
     "live": "",
-    "image": "./src/assets/projets/ArgentBank.avif"
+    "image": "/images/projets/ArgentBank.avif"
   },
   {
     "id": 8,
@@ -77,6 +77,6 @@
     "technos": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-Print-It",
     "live": "https://danyriscode.github.io/OCR-Project-Print-It/",
-    "image": "./src/assets/projets/PrintIt.avif"
+    "image": "/images/projets/PrintIt.avif"
   }
 ]

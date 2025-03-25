@@ -1,13 +1,13 @@
 {
     "dessin": [
-      { "src": "./src/assets/passions/Renard-500.avif", "alt": "Dessin d'un renard 1" },
-      { "src": "./src/assets/passions/Tournesol-500.avif", "alt": "Dessin d'un tournesol paysage" },
-      { "src": "./src/assets/passions/Hirondelle-500.avif", "alt": "Dessin d'un Hirondelle" }
+      { "src": "/images/passions/Renard-500.avif", "alt": "Dessin d'un renard 1" },
+      { "src": "/images/passions/Tournesol-500.avif", "alt": "Dessin d'un tournesol paysage" },
+      { "src": "/images/passions/Hirondelle-500.avif", "alt": "Dessin d'un Hirondelle" }
     ],
     "jeux": [
-      { "src": "./src/assets/passions/Satis-500.avif", "alt": "Capture d'écran de Satisfactory" },
-      { "src": "./src/assets/passions/Valheim-500.avif", "alt": "Capture d'écran de Valheim" },
-      { "src": "./src/assets/passions/Game3-500.avif", "alt": "Gestion de ressources" }
+      { "src": "/images/passions/Satis-500.avif", "alt": "Capture d'écran de Satisfactory" },
+      { "src": "/images/passions/Valheim-500.avif", "alt": "Capture d'écran de Valheim" },
+      { "src": "/images/passions/Game3-500.avif", "alt": "Gestion de ressources" }
     ]
   }
   
