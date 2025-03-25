@@ -40,8 +40,8 @@ function Accueil() {
 					transition={{ duration: 1 }}
 				>
 					{!isDarkMode
-						? "Marina, Développeuse Web qui allie sa passion pour le Dessin au Code."
-						: "Bienvenue dans mon univers, où chaque ligne de code raconte une histoire."}
+						? "Marina, Développeuse Front-End passionnée, entre code élégant et créativité visuelle."
+						: "Plongez dans un univers où chaque ligne de code est pensée comme une œuvre."}
 				</motion.h1>
 
 				<motion.p
@@ -50,8 +50,8 @@ function Accueil() {
 					transition={{ delay: 0.3, duration: 1 }}
 				>
 					{!isDarkMode
-						? "Bienvenue sur mon portfolio ! Découvrez mes projets."
-						: "N'hésitez pas à consulter mes projets et mes passions."}
+						? "Bienvenue sur mon portfolio ! Explorez mes projets et mon approche centrée sur l’expérience utilisateur."
+						: "Découvrez mes projets et mes passions qui mêlent technologie, esthétique et immersion."}
 				</motion.p>
 			</div>
 

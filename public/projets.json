@@ -4,7 +4,7 @@
     "title": "Portfolio",
     "description": "Mon portfolio développé avec React et Framer Motion.",
     "details": "Ce portfolio est un projet personnel visant à regrouper mes réalisations, compétences et passions. Il inclut un thème jour/nuit, des animations douces avec Framer Motion, une navigation fluide et une section passion cachée en mode nuit.",
-    "technos": ["React", "Sass", "Framer Motion"],
+    "technos": ["React", "Sass"],
     "github": "https://github.com/DaNyrisCode/Portfolio",
     "live": "",
     "image": "/images/projets/PortFolio.avif"
@@ -34,7 +34,7 @@
     "title": "Sophie Bluel",
     "description": "Un portfolio pour une architecte avec connexion a une API.",
     "details": "Réalisation d’un site avec appel à une API REST pour afficher une galerie. Connexion utilisateur, gestion du token JWT, création/suppression de projets, drag-and-drop pour uploader des images. Travail centré sur la manipulation du DOM et les requêtes asynchrones.",
-    "technos": ["HTML", "Sass", "JavaScript", "API"],
+    "technos": ["HTML", "Sass", "JavaScript"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-SophieBluel",
     "live": "",
     "image": "/images/projets/Sophie.avif"
@@ -64,7 +64,7 @@
     "title": "Argent Bank",
     "description": "Intégrer le front-end avec le back-end via des appels API pour une application bancaire.",
     "details": "Création d’une application bancaire en React avec gestion de l’authentification via Redux. Utilisation d’un backend Node.js existant. Affichage de données dynamiques, sécurisation avec token, modification de profil utilisateur.",
-    "technos": ["React", "Redux", "API"],
+    "technos": ["React", "Redux"],
     "github": "https://github.com/DaNyrisCode/OCR-Project-ArgentBank",
     "live": "",
     "image": "/images/projets/ArgentBank.avif"

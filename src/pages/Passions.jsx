@@ -33,9 +33,11 @@ function Passions() {
 				<div className="text">
 					<h3>Dessin</h3>
 					<p>
-						Depuis toujours, j’aime m’exprimer à travers le dessin.
-						C’est un moyen d’explorer des univers, raconter des
-						émotions, et libérer ma créativité. Passionée par la
+						Depuis toujours, le dessin est mon refuge et mon terrain
+						de jeu créatif. C’est à travers lui que j'exprime mes
+						émotions et raconte des histoires. Cette sensibilité
+						artistique influence ma manière d’aborder le Web design,
+						entre harmonie, douceur et fluidité. Inspirée par la
 						nature, je révèle sa beauté sur un bout de papiers.
 					</p>
 				</div>
@@ -46,11 +48,15 @@ function Passions() {
 				<div className="text">
 					<h3>Jeux Vidéo</h3>
 					<p>
-						Les jeux m’accompagnent depuis toujours. Satisfactory,
-						notamment, est un jeu de logique et de gestion qui
-						stimule l’analyse, l’optimisation, et la créativité.
-						Ainsi que de nombreux jeux Coop qui me permettent de
-						développer mes compétences en collaboration.
+						Tombée dans les jeux vidéo quand j’étais petite, j’y ai
+						trouvé un terrain propice pour nourrir ma curiosité, ma
+						logique et mon sens du détail. Des titres comme
+						Satisfactory stimulent mon goût pour l’optimisation, la
+						gestion de flux et l’analyse. Les jeux en coopération,
+						quant à eux, m’ont appris à collaborer, à communiquer
+						efficacement et à penser en équipe. Ces expériences
+						m’inspirent dans le code, où chaque défi devient une
+						mission à relever avec créativité, méthode et agilité.
 					</p>
 				</div>
 				<Carousel images={slides.jeux} />

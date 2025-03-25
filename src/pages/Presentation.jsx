@@ -59,8 +59,8 @@ function Presentation() {
 					transition={{ duration: 1, delay: 0.3 }}
 				>
 					{!isDarkMode
-						? "Je suis Marina, une développeuse web passionnée par le design et le code. Mon objectif est de créer des interfaces modernes, fluides et accessibles. J’aime explorer de nouvelles technologies et allier ma passion pour l’art au développement."
-						: "Je suis Nyris, une développeuse web et exploratrice du numérique, toujours en quête d’innovation et d’expériences immersives. Passionnée par le code, l’art et les univers fantastiques, j’aime façonner des interfaces modernes où design et technologie se rencontrent. Curieuse et créative, j’aime expérimenter pour concevoir des expériences uniques, alliant interactivité, fluidité et esthétisme."}
+						? "Je suis Marina, développeuse front-end passionnée par le design, le code et l’expérience utilisateur. J’aime créer des interfaces modernes, épurées et accessibles, où l’esthétique se met au service de la fluidité. Curieuse et investie, je mets ma créativité au cœur de chaque projet pour concevoir des expériences à la fois techniques et intuitives."
+						: "Je suis Nyris, exploratrice du web et artisane du numérique. Inspirée par la nature, les jeux vidéo et les mondes imaginaires, j’aime créer des interfaces qui racontent une histoire. Chaque projet est pour moi une opportunité d’apprendre, d’expérimenter et de mêler code, créativité et esthétique. Mon objectif : concevoir des expériences web simples, sensibles et immersives."}
 				</motion.p>
 			</div>
 

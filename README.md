@@ -1,12 +1,45 @@
-# React + Vite
+## Portfolio – Marina | Développeuse Web Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur mon portfolio réalisé avec React, Vite, CSS et Framer Motion.  
+Ce projet met en avant mes compétences techniques, mes réalisations, ainsi que mes passions pour les plus curieux, dans une interface moderne et responsive.
 
-Currently, two official plugins are available:
+## Objectif
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Créer un portfolio dynamique, accessible et épuré avec un mode clair/sombre, des animations fluides et une architecture optimisée pour le SEO.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Technologies utilisées
+
+-   [React](https://reactjs.org/)
+-   [Vite](https://vitejs.dev/)
+-   [Sass (SCSS)](https://sass-lang.com/)
+-   [Framer Motion](https://www.framer.com/motion/)
+-   Mode Dark/Light géré via React Context
+-   [Lucide](https://lucide.dev/) + [FontAwesome](https://fontawesome.com/) + [React Icons](https://react-icons.github.io/react-icons/) – Pour les icônes
+-   [Vite Plugin SVGR](https://github.com/pd4d10/vite-plugin-svgr) – Pour importer les SVGs en React components
+-   ESLint – Linting et bonnes pratiques
+-   Accessibilité et SEO améliorés
+-   Vitest – Petit test unitaire
+
+---
+
+Lancer le projet en local
+
+```bash
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de dev
+npm run dev
+
+# Compiler le projet pour la production
+npm run build
+
+# Lancer un aperçu de la version buildée
+npm run preview
+```
+
+## Déploiement
+
+Via Vercel : [Portfolio](https://portfoliomarina.vercel.app/)

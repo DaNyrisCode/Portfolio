@@ -7,8 +7,34 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
-	border: none;
+	padding: 2rem 1rem;
+	gap: 1rem;
+	text-align: center;
+
+	.footer-text {
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+
+	.footer-signature {
+		font-size: 0.9rem;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 30px;
+
+		a {
+			color: $tertiary-beige-color;
+			font-size: 1.4rem;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: scale(1.2);
+				color: lighten($tertiary-beige-color, 10%);
+			}
+		}
+	}
 
 	.theme-icon {
 		width: 25px;
@@ -35,6 +61,14 @@
 
 .dark-mode .footer {
 	background-color: $bg-dark;
+
+	.footer-links a {
+		color: $secondary-lilas-color;
+
+		&:hover {
+			color: lighten($secondary-lilas-color, 10%);
+		}
+	}
 
 	.theme-icon {
 		color: $secondary-lilas-color;

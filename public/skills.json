@@ -17,28 +17,28 @@
   {
     "name": "Travail d'équipe",
     "icon": "MdGroupWork",
-    "description": "J'apprécie collaborer sur des projets communs, partager les idées et avancer ensemble vers un objectif commun."
+    "description": "Je sais coopérer, transmettre les bonnes informations et contribuer à un objectif commun."
   },
   {
     "name": "Résilience",
     "icon": "MdAutorenew",
-    "description": "Face aux imprévus ou aux erreurs, je garde mon calme, apprends et rebondis avec efficacité."
+    "description": "Mon expérience m’a appris à gérer le stress avec sang-froid. Face aux imprévus, je garde mon calme, j'analyse et rebondis avec agilité."
   },
   {
     "name": "Sens de l'organisation",
     "icon": "MdOutlineChecklistRtl",
-    "description": "Je sais hiérarchiser les priorités, structurer mes tâches et respecter les délais dans un cadre autonome."
+    "description": "Je structure mon travail, hiérarchise les priorités et respecte les spécifications du projet."
   },
   {
     "name": "Créativité",
     "icon": "MdPsychology",
-    "description": "J’aime concevoir des interfaces harmonieuses et trouver des solutions originales pour améliorer l’UI/UX."
+    "description": "Je conçois des interfaces harmonieuses et originales pour améliorer l’UI/UX, en alliant code et sens artistique."
   },
   {
-    "name": "Esprit logique",
-    "icon": "MdFunctions",
-    "description": "J'aborde les problèmes avec méthode et logique pour trouver des solutions efficaces."
-  }  
+    "name": "Soif d’apprendre",
+    "icon": "MdSchool",
+    "description": "Curieuse et passionnée, je cherche constamment à progresser. J’aime explorer de nouvelles technologies et découvrir des approches innovantes."
+  }
 ]
 }
   

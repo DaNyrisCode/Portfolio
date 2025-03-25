@@ -57,7 +57,6 @@
 		.submit-btn {
 			@include button-style($blck-color, $light-green);
 			align-self: center;
-			padding: 12px 25px;
 			font-size: 1rem;
 		}
 	}
