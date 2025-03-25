@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
-import img1 from "../assets/feuilles-1400.avif";
-import img2 from "../assets/violet-1400.avif";
+import greenbg from "../assets/feuilles-1400.avif";
+import purplebg from "../assets/violet-1400.avif";
 import useSectionAnimation from "../hooks/useSectionAnimation";
 
 function Accueil() {
@@ -15,12 +15,24 @@ function Accueil() {
 			id="home"
 			ref={ref}
 		>
-			<img
-				src={!isDarkMode ? img1 : img2}
-				alt="Fond d'cran"
-				className="hero-img"
-			/>
+			{/* Fond decran */}
+			<picture className="hero-img">
+				<source
+					srcSet={
+						!isDarkMode ? "/feuilles-800.avif" : "/violet-800.avif"
+					}
+					media="(max-width: 768px)"
+					type="image/avif"
+				/>
+				<img
+					src={!isDarkMode ? greenbg : purplebg}
+					alt="Fond décoratif de l'accueil"
+					loading="lazy"
+					decoding="async"
+				/>
+			</picture>
 
+			{/* Phrases d'accueil */}
 			<div className="hero-content">
 				<motion.h1
 					initial={{ opacity: 0, y: -50 }}
@@ -43,23 +55,28 @@ function Accueil() {
 				</motion.p>
 			</div>
 
+			{/* Boutons Projets & Passions*/}
 			<div className="buttons-container">
-				<motion.button
+				<motion.a
+					href="#projets"
+					className="btn-link"
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={isInView ? { opacity: 1, scale: 1 } : {}}
 					transition={{ delay: 0.6, duration: 0.5 }}
 				>
-					<a href="#projets">Voir mes Projets</a>
-				</motion.button>
+					Mes Projets
+				</motion.a>
 
 				{isDarkMode && (
-					<motion.button
+					<motion.a
+						href="#passions"
+						className="btn-link"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={isInView ? { opacity: 1, scale: 1 } : {}}
-						transition={{ delay: 0.9, duration: 0.5 }}
+						transition={{ delay: 0.6, duration: 0.5 }}
 					>
-						<a href="#passions">Mes Passions</a>
-					</motion.button>
+						Mes Passions
+					</motion.a>
 				)}
 			</div>
 		</section>

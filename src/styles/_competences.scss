@@ -12,17 +12,16 @@
 	@include section-padding;
 
 	@media screen and (max-width: 768px) {
-		padding: 0px;
+		padding: 0;
 	}
 
 	// Hard Skills
 	.hard-skills-container {
-		background: rgba(255, 255, 255, 0.1);
-		backdrop-filter: blur(5px);
+		@include glass(5px, $white-opacity-10);
 		border-radius: 15px;
 		padding: 20px;
 		display: inline-block;
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 10px $black-opacity-10;
 		margin-bottom: 50px;
 
 		@media screen and (max-width: 768px) {
@@ -46,12 +45,11 @@
 				flex-direction: column;
 				align-items: center;
 				gap: 15px;
-				position: relative;
 
 				.icon {
 					font-size: 2.5rem;
-					transition: transform 0.3s ease-in-out;
 					color: inherit;
+					transition: transform 0.3s ease-in-out;
 
 					@media screen and (max-width: 768px) {
 						font-size: 2rem;
@@ -96,12 +94,11 @@
 
 		.soft-skill-card {
 			min-height: 250px;
-			background: rgba(255, 255, 255, 0.15);
-			backdrop-filter: blur(10px);
+			@include glass(10px, $white-opacity-10);
 			border-radius: 15px;
 			padding: 1.5rem;
 			text-align: center;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 4px 8px $black-opacity-20;
 			transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
 			h4 {
@@ -117,7 +114,7 @@
 			}
 
 			&:hover {
-				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+				box-shadow: 0 6px 12px $black-opacity-50;
 
 				.soft-skill-icon {
 					transform: rotate(20deg);
@@ -146,45 +143,37 @@
 }
 
 // Mode sombre
-.dark-mode {
-	.competences {
-		background: linear-gradient(180deg, $blck-color, $primary-purple-color);
+.dark-mode .competences {
+	background: linear-gradient(180deg, $blck-color, $primary-purple-color);
 
-		h3 {
+	h3 {
+		color: $light-lilas;
+	}
+
+	.hard-skills-container {
+		.skill span {
+			color: $light-lilas;
+		}
+	}
+
+	.soft-skill-card {
+		background: $white-opacity-10;
+		border: 1px solid $white-opacity-20;
+
+		.icon-wrapper {
+			background: $white-opacity-30;
+		}
+
+		.soft-skill-icon {
+			color: $bg-dark;
+		}
+
+		h4 {
 			color: $light-lilas;
 		}
 
-		.hard-skills-container,
-		.hard-skills-container {
-			@media screen and (max-width: 768px) {
-				background: none;
-				box-shadow: none;
-			}
-		}
-		.soft-skill-card {
-			background: rgba(255, 255, 255, 0.05);
-			border: 1px solid rgba(255, 255, 255, 0.2);
-
-			.skill {
-				span {
-					color: $light-lilas;
-				}
-			}
-
-			.icon-wrapper {
-				background: rgb(255 255 255 / 40%);
-			}
-			.soft-skill-icon {
-				color: $bg-dark;
-			}
-
-			h4 {
-				color: $light-lilas;
-			}
-
-			p {
-				color: $tertiary-beige-color;
-			}
+		p {
+			color: $tertiary-beige-color;
 		}
 	}
 }

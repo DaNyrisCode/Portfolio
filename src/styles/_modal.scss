@@ -17,9 +17,8 @@
 .modal-content {
 	position: relative;
 	background: #05464c99;
-	backdrop-filter: blur(12px);
 	border-radius: 20px;
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 30px $black-opacity-30;
 	max-width: 600px;
 	width: 90%;
 	padding: 2rem;
@@ -27,10 +26,8 @@
 	color: $tertiary-beige-color;
 
 	img {
-		width: 100%;
+		@include responsive-img(10px);
 		max-height: 300px;
-		object-fit: cover;
-		border-radius: 10px;
 		padding: 5px;
 	}
 
@@ -55,7 +52,7 @@
 		.tech-icon {
 			width: 30px;
 			height: 30px;
-			filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+			filter: drop-shadow(0 0 2px $black-opacity-30);
 		}
 	}
 
@@ -65,17 +62,9 @@
 		gap: 1rem;
 
 		a {
-			background: $primary-green-color;
-			color: $wht-color;
-			padding: 10px 15px;
-			border-radius: 8px;
-			text-decoration: none;
-			align-items: center;
+			@include button-style($wht-color, $primary-green-color);
 			gap: 0.5rem;
-
-			&:hover {
-				background: lighten($primary-green-color, 10%);
-			}
+			text-decoration: none;
 		}
 	}
 }
@@ -97,7 +86,7 @@
 
 // Mode nuit
 .dark-mode .modal-content {
-	background: rgba(0, 0, 0, 0.6);
+	background: $black-opacity-70;
 	color: $secondary-lilas-color;
 
 	h3 {

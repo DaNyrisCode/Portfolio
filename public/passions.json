@@ -5,8 +5,8 @@
       { "src": "./src/assets/passions/Hirondelle-500.avif", "alt": "Dessin d'un Hirondelle" }
     ],
     "jeux": [
-      { "src": "./src/assets/passions/Game1-500.avif", "alt": "Factory setup" },
-      { "src": "./src/assets/passions/Game2-500.avif", "alt": "Vue de la base" },
+      { "src": "./src/assets/passions/Satis-500.avif", "alt": "Capture d'écran de Satisfactory" },
+      { "src": "./src/assets/passions/Valheim-500.avif", "alt": "Capture d'écran de Valheim" },
       { "src": "./src/assets/passions/Game3-500.avif", "alt": "Gestion de ressources" }
     ]
   }

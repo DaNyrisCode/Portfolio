@@ -38,8 +38,10 @@ function Contact() {
 				<h2>Contact</h2>
 			</div>
 
+			{/* Confirmation d'envoie du message */}
 			{messageSent ? (
 				<motion.p
+					role="status"
 					className="confirmation-message"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -51,6 +53,7 @@ function Contact() {
 					className="contact-form"
 					onSubmit={handleSubmit}
 				>
+					{/* Formulaire de contact */}
 					<motion.div
 						className="form-group"
 						initial={{ opacity: 0, y: 20 }}
@@ -108,6 +111,7 @@ function Contact() {
 					<motion.button
 						type="submit"
 						className="submit-btn"
+						aria-label="Envoyer le formulaire de contact"
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 					>

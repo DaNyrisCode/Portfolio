@@ -11,7 +11,7 @@
 	}
 
 	.section-title {
-		color: rgba(255, 255, 255, 0.1);
+		color: $white-opacity-20;
 	}
 
 	.confirmation-message {
@@ -49,39 +49,31 @@
 				padding: 10px 15px;
 				border: none;
 				border-radius: 10px;
-				background: rgba(255, 255, 255, 0.9);
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+				background: $wht-color;
+				box-shadow: 0 2px 6px $black-opacity-10;
 			}
 		}
 
 		.submit-btn {
+			@include button-style($blck-color, $light-green);
 			align-self: center;
-			background: $light-green;
-			color: $blck-color;
-			border: none;
-			border-radius: 20px;
 			padding: 12px 25px;
 			font-size: 1rem;
-			cursor: pointer;
-			transition: background 0.3s ease;
 		}
 	}
 }
 
-// Dark mode
+// Mode sombre
 .dark-mode .contact {
 	background: $bg-dark;
 
 	.contact-form {
-		.form-group {
-			label {
-				color: $light-lilas;
-			}
+		.form-group label {
+			color: $light-lilas;
 		}
 	}
 
 	.submit-btn {
-		background: $primary-purple-color;
-		color: $light-lilas;
+		@include button-style($light-lilas, $primary-purple-color);
 	}
 }

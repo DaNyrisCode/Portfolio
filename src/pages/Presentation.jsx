@@ -13,6 +13,9 @@ function Presentation() {
 
 	const { ref, isInView } = useSectionAnimation(0.7, false);
 
+	{
+		/* Suivis de la souris rotation/parallax */
+	}
 	const handleMouseMove = (e) => {
 		const { width, height, left, top } =
 			e.currentTarget.getBoundingClientRect();
@@ -23,6 +26,9 @@ function Presentation() {
 		setRotateY(x);
 	};
 
+	{
+		/* Reset du Suivis*/
+	}
 	const handleMouseLeave = () => {
 		setRotateX(0);
 		setRotateY(0);
@@ -64,6 +70,7 @@ function Presentation() {
 				animate={isInView ? { opacity: 1, scale: 1 } : {}}
 				transition={{ duration: 0.8, delay: 0.3 }}
 			>
+				{/* Parallax */}
 				<motion.img
 					src={!isDarkMode ? img1 : img2}
 					alt="Nyris"

@@ -4,6 +4,9 @@ import { useTheme } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import Carousel from "../components/Carousel";
 
+{
+	/* Section Passions visible qu'en Dark Mode */
+}
 function Passions() {
 	const { isDarkMode } = useTheme();
 	const [slides, setSlides] = useState({ dessin: [], jeux: [] });
@@ -32,7 +35,8 @@ function Passions() {
 					<p>
 						Depuis toujours, j’aime m’exprimer à travers le dessin.
 						C’est un moyen d’explorer des univers, raconter des
-						émotions, et libérer ma créativité.
+						émotions, et libérer ma créativité. Passionée par la
+						nature, je révèle sa beauté sur un bout de papiers.
 					</p>
 				</div>
 				<Carousel images={slides.dessin} />
@@ -45,6 +49,8 @@ function Passions() {
 						Les jeux m’accompagnent depuis toujours. Satisfactory,
 						notamment, est un jeu de logique et de gestion qui
 						stimule l’analyse, l’optimisation, et la créativité.
+						Ainsi que de nombreux jeux Coop qui me permettent de
+						développer mes compétences en collaboration.
 					</p>
 				</div>
 				<Carousel images={slides.jeux} />

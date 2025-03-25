@@ -8,7 +8,7 @@
 	@include section-padding;
 
 	@media screen and (max-width: 768px) {
-		padding: 0px;
+		padding: 0;
 	}
 
 	.projet-container {
@@ -20,20 +20,17 @@
 	}
 
 	.projet-card {
-		background: rgba(255, 255, 255, 0.2);
+		@include glass(8px, $white-opacity-20);
 		padding: 20px;
 		border-radius: 15px;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 15px $black-opacity-10;
 		text-align: center;
-		transition: transform 0.2s ease-out;
 		cursor: pointer;
+		transition: transform 0.1s ease-out;
 
 		img {
-			width: 100%;
+			@include responsive-img(10px);
 			height: 250px;
-			object-fit: cover;
-			border-radius: 10px;
-			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 		}
 
 		h3 {
@@ -55,23 +52,13 @@
 			margin-top: 15px;
 
 			a {
-				text-decoration: none;
-				background: $primary-green-color;
-				color: white;
-				padding: 10px 15px;
-				border-radius: 5px;
+				@include button-style($wht-color, $primary-green-color);
 				display: flex;
 				align-items: center;
 				gap: 5px;
-				cursor: pointer;
-				transition: background 0.3s ease-in-out;
 
 				i {
 					font-size: 1.2rem;
-				}
-
-				&:hover {
-					background: lighten($primary-green-color, 10%);
 				}
 			}
 		}
@@ -83,23 +70,19 @@
 	background: linear-gradient(180deg, $bg-dark, $blck-color);
 
 	.projet-card {
-		background: rgba(255, 255, 255, 0.1);
-		box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+		@include glass(8px, $white-opacity-10);
+		box-shadow: 0 5px 15px $white-opacity-10;
 
 		h3 {
 			color: $secondary-lilas-color;
 		}
 
 		p {
-			color: lighten($secondary-lilas-color, 10%);
+			color: $light-lilas;
 		}
 
 		.buttons a {
-			background: $primary-purple-color;
-
-			&:hover {
-				background: lighten($primary-purple-color, 10%);
-			}
+			@include button-style($wht-color, $primary-purple-color);
 		}
 	}
 }

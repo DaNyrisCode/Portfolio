@@ -11,6 +11,7 @@ function Footer() {
 			<button
 				className="theme-toggle"
 				onClick={toggleTheme}
+				aria-label="Changer le thème visuel du site"
 			>
 				{!isDarkMode ? (
 					<IconMoon className="theme-icon" />

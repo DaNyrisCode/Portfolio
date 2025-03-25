@@ -27,6 +27,7 @@ function Projets() {
 				<h2>Projets</h2>
 			</div>
 			<div className="projet-container">
+				{/* Mes Projets */}
 				{projects.map((projet) => (
 					<motion.div
 						key={projet.id}
@@ -40,13 +41,15 @@ function Projets() {
 					>
 						<img
 							src={projet.image}
-							alt={projet.title}
+							alt={`Image du projet ${projet.title}`}
+							loading="lazy"
 						/>
 						<h3>{projet.title}</h3>
 						<p>{projet.description}</p>
 					</motion.div>
 				))}
 			</div>
+			{/* Modal pour description du projet */}
 			<ModalProjet
 				projet={selectedProject}
 				onClose={() => setSelectedProject(null)}

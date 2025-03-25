@@ -6,6 +6,9 @@ function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const { isDarkMode } = useTheme();
 
+	{
+		/* NavBar Sticky */
+	}
 	useEffect(() => {
 		const handleScroll = () => {
 			setIsSticky(window.scrollY > 50);
@@ -22,6 +25,7 @@ function Header() {
 	return (
 		<header className={`header ${isSticky ? "sticky" : ""}`}>
 			<div className="nav-wrapper">
+				{/* Hamburger Menu */}
 				<button
 					className="hamburger"
 					onClick={() => setMenuOpen(!menuOpen)}
@@ -32,6 +36,7 @@ function Header() {
 					<span className={`bar ${menuOpen ? "open" : ""}`}></span>
 				</button>
 
+				{/* Navigation Menu */}
 				<nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
 					<ul>
 						<li>

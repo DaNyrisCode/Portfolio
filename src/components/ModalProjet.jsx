@@ -28,6 +28,9 @@ function ModalProjet({ projet, onClose }) {
 		setIconMap(map);
 	}, []);
 
+	{
+		/* Gestion fermeture modal */
+	}
 	useEffect(() => {
 		const handleEscape = (e) => {
 			if (e.key === "Escape") onClose();
@@ -40,6 +43,7 @@ function ModalProjet({ projet, onClose }) {
 
 	return (
 		<AnimatePresence>
+			{/* Fond derrière la modale */}
 			<motion.div
 				className="modal-backdrop"
 				onClick={onClose}
@@ -47,6 +51,7 @@ function ModalProjet({ projet, onClose }) {
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 			>
+				{/* Contenu principal de la modale */}
 				<motion.div
 					className="modal-content"
 					onClick={(e) => e.stopPropagation()}
@@ -55,6 +60,7 @@ function ModalProjet({ projet, onClose }) {
 					exit={{ y: "-20%", opacity: 0 }}
 					transition={{ duration: 0.3 }}
 				>
+					{/* Bouton de fermeture */}
 					<button
 						className="close-btn"
 						onClick={onClose}
@@ -63,6 +69,7 @@ function ModalProjet({ projet, onClose }) {
 						<X size={24} />
 					</button>
 
+					{/* Image et titre du projet */}
 					<img
 						src={projet.image}
 						alt={projet.title}
@@ -70,6 +77,7 @@ function ModalProjet({ projet, onClose }) {
 					<h3>{projet.title}</h3>
 					<p className="modal-description">{projet.details}</p>
 
+					{/* Icônes des technologies utilisées */}
 					<div className="technos">
 						{projet.technos?.map((tech, index) => {
 							const techData = iconMap[tech.toLowerCase()];
@@ -85,11 +93,13 @@ function ModalProjet({ projet, onClose }) {
 						})}
 					</div>
 
+					{/* Liens externes vers GitHub et site en ligne */}
 					<div className="modal-links">
 						<a
 							href={projet.github}
 							target="_blank"
-							rel="noreferrer"
+							rel="noopener noreferrer"
+							aria-label={`Lien GitHub du projet ${projet.title}`}
 						>
 							<i className="fa-brands fa-github"></i> GitHub
 						</a>
@@ -97,7 +107,8 @@ function ModalProjet({ projet, onClose }) {
 							<a
 								href={projet.live}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
+								aria-label={`Lien GitHub Pages du projet ${projet.title}`}
 							>
 								<i className="fa-solid fa-globe"></i> Live
 							</a>
