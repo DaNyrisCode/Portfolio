@@ -38,7 +38,7 @@ function Passions() {
 						émotions et raconte des histoires. Cette sensibilité
 						artistique influence ma manière d’aborder le Web design,
 						entre harmonie, douceur et fluidité. Inspirée par la
-						nature, je révèle sa beauté sur un bout de papiers.
+						nature, je révèle sa beauté sur un bout de papier.
 					</p>
 				</div>
 				<Carousel images={slides.dessin} />
