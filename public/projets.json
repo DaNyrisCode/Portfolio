@@ -1,16 +1,6 @@
 [
   {
     "id": 1,
-    "title": "Portfolio",
-    "description": "Mon portfolio développé avec React et Framer Motion.",
-    "details": "Ce portfolio est un projet personnel visant à regrouper mes réalisations, compétences et passions. Il inclut un thème jour/nuit, des animations douces avec Framer Motion, une navigation fluide et une section passion cachée en mode nuit.",
-    "technos": ["React", "Sass"],
-    "github": "https://github.com/DaNyrisCode/Portfolio",
-    "live": "",
-    "image": "/images/projets/PortFolio.avif"
-  },
-  {
-    "id": 2,
     "title": "Oh My Food",
     "description": "Un projet de réservation de menus de restaurant en mobile-first.",
     "details": "Projet orienté mobile-first avec animations CSS, structure HTML sémantique, mise en valeur des menus avec effets visuels et responsive design. Le but était de rendre l’expérience fluide et immersive pour l’utilisateur.",
@@ -20,17 +10,17 @@
     "image": "/images/projets/OMF.avif"
   },
   {
-    "id": 3,
-    "title": "Kasa",
-    "description": "Une plateforme de location d’appartements développée avec React.",
-    "details": "Projet complet en React : création de composants dynamiques, gestion des routes avec React Router, affichage conditionnel et respect des maquettes Figma. Utilisation des props, des hooks et des states.",
-    "technos": ["React", "Sass"],
-    "github": "https://github.com/DaNyrisCode/OCR-Project-Kasa",
-    "live": "",
-    "image": "/images/projets/Kasa.avif"
+    "id": 2,
+    "title": "Print It",
+    "description": "Dynamiser le site Internet statique d’une petite imprimerie familiale.",
+    "details": "Ajout de fonctionnalités dynamiques (filtrage des produits, panier, animation) avec JavaScript pur. Optimisation des performances, gestion des événements utilisateur et intégration responsive des éléments.",
+    "technos": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/DaNyrisCode/OCR-Project-Print-It",
+    "live": "https://danyriscode.github.io/OCR-Project-Print-It/",
+    "image": "/images/projets/PrintIt.avif"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Sophie Bluel",
     "description": "Un portfolio pour une architecte avec connexion a une API.",
     "details": "Réalisation d’un site avec appel à une API REST pour afficher une galerie. Connexion utilisateur, gestion du token JWT, création/suppression de projets, drag-and-drop pour uploader des images. Travail centré sur la manipulation du DOM et les requêtes asynchrones.",
@@ -40,17 +30,17 @@
     "image": "/images/projets/Sophie.avif"
   },
   {
-    "id": 5,
-    "title": "724 Events",
-    "description": "Debugger le site d'une agence de voyages.",
-    "details": "Analyse et correction de bugs JavaScript, amélioration de la lisibilité du code, mise en place de tests unitaires avec Jasmine en suivant les principes du TDD et BDD. L'objectif était de stabiliser une base existante.",
-    "technos": ["JavaScript"],
-    "github": "https://github.com/DaNyrisCode/OCR-Project-724",
+    "id": 4,
+    "title": "Kasa",
+    "description": "Une plateforme de location d’appartements développée avec React.",
+    "details": "Projet complet en React : création de composants dynamiques, gestion des routes avec React Router, affichage conditionnel et respect des maquettes Figma. Utilisation des props, des hooks et des states.",
+    "technos": ["React", "Sass"],
+    "github": "https://github.com/DaNyrisCode/OCR-Project-Kasa",
     "live": "",
-    "image": "/images/projets/724.avif"
+    "image": "/images/projets/Kasa.avif"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Nina Carducci",
     "description": "Optimiser le référencement d'un site de photographe.",
     "details": "Refonte SEO d’un site vitrine. Optimisation des balises HTML, amélioration du temps de chargement, compression d’images, ajout de données structurées et travail sur l’accessibilité. Objectif : meilleure visibilité sur Google.",
@@ -58,6 +48,16 @@
     "github": "https://github.com/DaNyrisCode/OCR-Project-NinaCarducci-SEO",
     "live": "https://danyriscode.github.io/OCR-Project-NinaCarducci-SEO/",
     "image": "/images/projets/Nina.avif"
+  },
+  {
+    "id": 6,
+    "title": "724 Events",
+    "description": "Debugger le site d'une agence de voyages.",
+    "details": "Analyse et correction de bugs JavaScript, amélioration de la lisibilité du code, mise en place de tests unitaires avec Jasmine en suivant les principes du TDD et BDD. L'objectif était de stabiliser une base existante.",
+    "technos": ["JavaScript"],
+    "github": "https://github.com/DaNyrisCode/OCR-Project-724",
+    "live": "",
+    "image": "/images/projets/724.avif"
   },
   {
     "id": 7,
@@ -71,12 +71,12 @@
   },
   {
     "id": 8,
-    "title": "Print It",
-    "description": "Dynamiser le site Internet statique d’une petite imprimerie familiale.",
-    "details": "Ajout de fonctionnalités dynamiques (filtrage des produits, panier, animation) avec JavaScript pur. Optimisation des performances, gestion des événements utilisateur et intégration responsive des éléments.",
-    "technos": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/DaNyrisCode/OCR-Project-Print-It",
-    "live": "https://danyriscode.github.io/OCR-Project-Print-It/",
-    "image": "/images/projets/PrintIt.avif"
+    "title": "Portfolio",
+    "description": "Mon portfolio développé avec React et Framer Motion.",
+    "details": "Ce portfolio est un projet personnel visant à regrouper mes réalisations, compétences et passions. Il inclut un thème jour/nuit, des animations douces avec Framer Motion, une navigation fluide et une section passion cachée en mode nuit.",
+    "technos": ["React", "Sass"],
+    "github": "https://github.com/DaNyrisCode/Portfolio",
+    "live": "https://portfoliomarina.vercel.app/",
+    "image": "/images/projets/PortFolio.avif"
   }
 ]

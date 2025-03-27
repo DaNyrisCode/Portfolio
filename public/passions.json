@@ -1,8 +1,8 @@
 {
     "dessin": [
-      { "src": "/images/passions/Renard-500.avif", "alt": "Dessin d'un renard 1" },
-      { "src": "/images/passions/Tournesol-500.avif", "alt": "Dessin d'un tournesol paysage" },
-      { "src": "/images/passions/Hirondelle-500.avif", "alt": "Dessin d'un Hirondelle" }
+      { "src": "/images/passions/Renard-500.avif", "alt": "Dessin d'un renard" },
+      { "src": "/images/passions/Tournesol-500.avif", "alt": "Dessin d'un tournesol" },
+      { "src": "/images/passions/Hirondelle-500.avif", "alt": "Dessin d'une Hirondelle" }
     ],
     "jeux": [
       { "src": "/images/passions/Satis-500.avif", "alt": "Capture d'écran de Satisfactory" },

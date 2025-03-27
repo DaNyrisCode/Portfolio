@@ -10,7 +10,7 @@
       { "name": "GitHub", "icon": "FaGithub", "color": "#ffffff" },
       { "name": "MongoDB", "icon": "SiMongodb", "color": "#4db33d" },
       { "name": "Figma", "icon": "SiFigma", "color": "#f24e1e" },
-      { "name": "Visual Studio Code", "icon": "FaCode", "color": "#007ACC" },
+      { "name": "VSC", "icon": "FaCode", "color": "#007ACC" },
       { "name": "Swagger", "icon": "SiSwagger", "color": "#85ea2d" }
     ],
     "softSkills": [
